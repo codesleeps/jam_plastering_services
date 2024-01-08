@@ -24,7 +24,6 @@ const resourcesToPrecache = [
   "assets/img/favicon4.png",
   "assets/img/favicon5.png",
   "assets/img/favicon6.png",
-  "assets/img/favicon5_1.webp",
   "assets/img/favicon7.png",
   "assets/img/about/vanMain.webp",
   "assets/img/clients/Barratt_Developments_logo.svg.png",
