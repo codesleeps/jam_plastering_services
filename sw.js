@@ -20,7 +20,7 @@ const resourcesToPrecache = [
   "assets/img/favicon.png",
   "assets/img/favicon1.png",
   "assets/img/favicon2.png",
-  "assets/img/favicon3.png",
+  // "assets/img/favicon3.png",
   "assets/img/favicon4.png",
   "assets/img/favicon5.png",
   "assets/img/favicon6.png",
