@@ -6,9 +6,9 @@ self.addEventListener("activate", (event) => {
   console.log("Activate event!");
 });
 
-// self.addEventListener("fetch", (event) => {
-//   console.log("Fetch intercepted for:", event.request.url);
-// });
+self.addEventListener("fetch", (event) => {
+  console.log("Fetch intercepted for:", event.request.url);
+});
 
 const cacheName = "cache-v1";
 const resourcesToPrecache = [
@@ -154,14 +154,14 @@ const resourcesToPrecache = [
   "assets/img/video/venetianStyles.mp4",
 ];
 
-// self.addEventListener("install", (event) => {
-//   console.log("Service worker install event!");
-//   event.waitUntil(
-//     caches.open(cacheName).then((cache) => {
-//       return cache.addAll(resourcesToPrecache);
-//     })
-//   );
-// });
+self.addEventListener("install", (event) => {
+  console.log("Service worker install event!");
+  event.waitUntil(
+    caches.open(cacheName).then((cache) => {
+      return cache.addAll(resourcesToPrecache);
+    })
+  );
+});
 // Responding with only cached resources
 self.addEventListener("fetch", (event) => {
   event.respondWith(caches.match(event.request));
