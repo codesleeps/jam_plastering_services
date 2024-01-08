@@ -6,9 +6,9 @@ self.addEventListener("activate", (event) => {
   console.log("Activate event!");
 });
 
-self.addEventListener("fetch", (event) => {
-  console.log("Fetch intercepted for:", event.request.url);
-});
+// self.addEventListener("fetch", (event) => {
+//   console.log("Fetch intercepted for:", event.request.url);
+// });
 
 const cacheName = "cache-v1";
 const resourcesToPrecache = [
